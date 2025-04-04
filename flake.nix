@@ -22,6 +22,11 @@
                       pkgs.clang-tools
                   ];
                 };
+                python = pkgs.mkShell {
+                    nativeBuildInputs = [
+                        pkgs.python3
+                    ];
+                };
             };
         });
 }
